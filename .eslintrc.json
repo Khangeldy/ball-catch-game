@@ -1,3 +1,15 @@
 {
-    "extends": "airbnb"
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "no-unused-vars": ["error", { "vars": "all", "args": "none", "ignoreRestSiblings": true }],
+    "no-mixed-spaces-and-tabs": "error",
+    "camelcase": ["error", { "properties": "never" }],
+    "no-console": "error"
+  }
 }

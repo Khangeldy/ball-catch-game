@@ -51,11 +51,11 @@ module.exports = {
     }),
     new CopyWebpackPlugin([
       {
-        from: 'src/images/*',
+        from: 'src/images/',
         to: 'images'
       },
       {
-        from: 'src/assets/*',
+        from: 'src/assets/',
         to: 'assets'
       }
     ]),

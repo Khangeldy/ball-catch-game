@@ -14,19 +14,19 @@ if (process.env.NODE_ENV !== 'production') {
 module.exports = merge(common, {
   devtool: 'inline-source-map',
   plugins: [
-    new Jarvis({
-      port: 3800
-    }),
+    // new Jarvis({
+    //   port: 3800
+    // }),
     new BrowserSyncPlugin({
       host: 'localhost',
       port: 3000,
       server: { baseDir: ['dist'] }
-    }),
-    new GoogleFontsPlugin({
-      fonts: [
-        { family: "Source Sans Pro" },
-        { family: "Roboto", variants: [ "400", "700italic" ] }
-      ]
     })
+    // new GoogleFontsPlugin({
+    //   fonts: [
+    //     { family: "Source Sans Pro" },
+    //     { family: "Roboto", variants: [ "400", "700italic" ] }
+    //   ]
+    // })
   ]
 })

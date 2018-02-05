@@ -13,7 +13,8 @@
   "scripts": {
     "start": "webpack --watch --config webpack.dev.js",
     "start:dash": "webpack-dashboard -- webpack --watch --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.35",
@@ -48,5 +49,8 @@
     "webpack-dashboard": "^1.0.2",
     "webpack-jarvis": "^0.2.2",
     "webpack-merge": "^4.1.1"
+  },
+  "dependencies": {
+    "gh-pages": "^1.1.0"
   }
 }
